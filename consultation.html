@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Consultation | Alberto Murillo | San Antonio REALTOR®</title>
+  <meta name="description" content="Schedule a free consultation with Alberto Murillo, San Antonio's Certified Probate Real Estate Specialist. Bilingual English & Spanish. Call 210-313-5623.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.albertomurillo.com/consultation">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --crimson:     #8B1A1A;
+      --crimson-dark:#6B1414;
+      --gold:        #C9A84C;
+      --gold-light:  #E8D5A3;
+      --charcoal:    #0F0F0F;
+      --charcoal-2:  #1A1A1A;
+      --charcoal-3:  #242424;
+      --white:       #FFFFFF;
+      --gray-mid:    #888888;
+      --font-display:'Cormorant Garamond', Georgia, serif;
+      --font-body:   'Montserrat', sans-serif;
+      --transition:  all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--charcoal);
+      color: var(--white);
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── NAV ── */
+    nav {
+      background: rgba(15,15,15,0.98);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 0 40px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .nav-logo span { color: var(--gold); }
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray-mid);
+      transition: var(--transition);
+    }
+    .nav-back:hover { color: var(--gold); }
+
+    /* ── HERO STRIP ── */
+    .page-hero {
+      background: var(--charcoal-2);
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+      padding: 48px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('images/hero-banner.jpg') center/cover;
+      opacity: 0.06;
+    }
+    .page-hero-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+    .page-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .page-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px; height: 1px;
+      background: var(--gold);
+    }
+    .page-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .page-hero h1 span { color: var(--gold); }
+    .page-hero p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.8;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* ── MAIN LAYOUT ── */
+    .main-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 40px;
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    /* ── LEFT SIDEBAR ── */
+    .sidebar h2 {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .sidebar h2 span { color: var(--gold); }
+    .sidebar .sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .sidebar-points { list-style: none; margin-bottom: 36px; }
+    .sidebar-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.5;
+    }
+    .sidebar-points li::before {
+      content: '✦';
+      color: var(--gold);
+      font-size: 9px;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .contact-quick { display: flex; flex-direction: column; gap: 10px; }
+    .quick-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      background: var(--charcoal-2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+    .quick-item:hover { border-color: rgba(201,168,76,0.3); }
+    .quick-icon { font-size: 18px; }
+    .quick-text strong {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2px;
+    }
+    .quick-text span { font-size: 13px; color: var(--white); }
+
+    /* ── IFRAME WRAP ── */
+    .form-wrap {
+      background: var(--charcoal-2);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 2px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .form-wrap::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--crimson);
+      z-index: 1;
+    }
+
+    .form-label {
+      padding: 20px 24px 16px 28px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .form-label span {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .form-label .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--crimson);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .iframe-container iframe {
+      width: 100%;
+      min-height: 700px;
+      border: none;
+      display: block;
+      background: var(--white);
+    }
+
+    /* ── TRUST STRIP ── */
+    .trust-strip {
+      background: var(--charcoal-2);
+      border-top: 1px solid rgba(201,168,76,0.1);
+      padding: 24px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .trust-strip span {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray-mid);
+    }
+    .trust-strip .gold { color: var(--gold); }
+    .trust-strip .sep { color: rgba(255,255,255,0.1); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--charcoal);
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding: 24px 40px;
+      text-align: center;
+    }
+    footer p {
+      font-size: 11px;
+      color: rgba(255,255,255,0.25);
+      line-height: 1.7;
+    }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .page-hero { padding: 36px 20px; }
+      .main-wrap {
+        grid-template-columns: 1fr;
+        padding: 32px 20px;
+        gap: 32px;
+      }
+      .trust-strip { padding: 20px; gap: 16px; }
+      .trust-strip .sep { display: none; }
+      footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-logo">Alberto <span>Murillo</span></a>
+    <a href="/" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="page-eyebrow">Free Consultation</div>
+      <h1>Let's Start the <span>Conversation.</span></h1>
+      <p>Whether you have inherited a home, are ready to buy or sell, or just have questions -- reach out. The first conversation is always free and there is no obligation.</p>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main-wrap">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <h2>Why Talk to <span>Alberto?</span></h2>
+      <p class="sub">12+ years of San Antonio real estate experience. Certified Probate Specialist. Bilingual. No pressure. Just honest guidance.</p>
+
+      <ul class="sidebar-points">
+        <li>Certified Probate Real Estate Specialist (CPRES) -- one of the few in San Antonio</li>
+        <li>Deep knowledge of Texas probate law, Bexar County courts, and local market</li>
+        <li>Bilingual -- English and Spanish, no interpreter needed</li>
+        <li>Full network of probate attorneys, CPAs, estate sale companies, and contractors</li>
+        <li>No pressure, no obligation -- just a real conversation about your situation</li>
+        <li>Response within 24 hours, guaranteed</li>
+      </ul>
+
+      <div class="contact-quick">
+        <a href="tel:2103135623" class="quick-item">
+          <span class="quick-icon">📞</span>
+          <div class="quick-text">
+            <strong>Call or Text</strong>
+            <span>210-313-5623</span>
+          </div>
+        </a>
+        <a href="mailto:alberto.murillo@kw.com" class="quick-item">
+          <span class="quick-icon">✉️</span>
+          <div class="quick-text">
+            <strong>Email</strong>
+            <span>alberto.murillo@kw.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- IFRAME FORM -->
+    <div class="form-wrap">
+      <div class="form-label">
+        <div class="dot"></div>
+        <span>Secure Request Form -- Goes Directly to Alberto</span>
+      </div>
+      <div class="iframe-container">
+        <iframe 
+          src="https://pages.wiseagent.com/pages/?id=E28045C9-AF94-46A0-808A-B59D12055B41"
+          title="Request a Free Consultation with Alberto Murillo"
+          loading="lazy"
+          allow="forms"
+          scrolling="auto">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <span class="gold">Alberto Murillo</span>
+    <span class="sep">|</span>
+    <span>REALTOR®</span>
+    <span class="sep">|</span>
+    <span class="gold">CPRES Certified</span>
+    <span class="sep">|</span>
+    <span>Keller Williams Heritage</span>
+    <span class="sep">|</span>
+    <span>License #615881</span>
+    <span class="sep">|</span>
+    <span class="gold">Bilingual English &amp; Español</span>
+    <span class="sep">|</span>
+    <span>San Antonio, TX</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Alberto Murillo. All rights reserved. REALTOR® is a registered trademark of the National Association of REALTORS®.<br>
+    Keller Williams Heritage | San Antonio, TX | License #615881</p>
+  </footer>
+
+</body>
+</html>
